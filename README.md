@@ -1,2 +1,33 @@
-# MatrixMultiplicationBenchmark
-with my template lib
+# Matrix Multiplication Benchmark
+
+## Описание
+
+Бенчмарк для сравнения производительности двух алгоритмов умножения квадратных матриц:
+
+- **Наивный алгоритм** (O(n³))
+- **Оптимизированный алгоритм** (с транспонированием)
+
+Измеряется зависимость времени выполнения от **количества элементов** в матрице.
+
+---
+
+## Результаты
+
+График показывает время выполнения двух алгоритмов в зависимости от количества элементов в матрице:
+
+<img width="1439" height="759" alt="image" src="https://github.com/user-attachments/assets/10487e7e-a111-4651-ad74-aad2659c94dd" />
+
+*Красная линия — наивный алгоритм, синяя — оптимизированный*
+
+---
+
+## Сборка и запуск
+
+```bash
+git clone https://github.com/AleksandrZagrebin/matrix-benchmark.git
+cd matrix-benchmark
+mkdir build && cd build
+cmake ..
+make
+./benchmark   # запуск бенчмарка
+./plotter     # построение графика
